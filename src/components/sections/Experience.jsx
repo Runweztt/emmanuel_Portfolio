@@ -63,15 +63,11 @@ export default function Experience() {
                       <h3 className="text-lg font-bold text-ink">{exp.company}</h3>
                       <p className="text-sm font-medium text-accent mt-0.5">{exp.role}</p>
                     </div>
-                    <div className="flex items-center gap-2 flex-shrink-0">
-                      <span
-                        className={`px-2.5 py-0.5 text-xs font-medium rounded-full border ${
-                          typeBadgeColors[exp.type] || 'text-ink-muted bg-white/5 border-white-6'
-                        }`}
-                      >
-                        {exp.type}
-                      </span>
+                    <div className="flex flex-col items-end gap-1 flex-shrink-0">
                       <span className="text-sm text-ink-faint">{exp.period}</span>
+                      {exp.location && (
+                        <span className="text-xs text-ink-faint font-mono">{exp.location}</span>
+                      )}
                     </div>
                   </div>
 

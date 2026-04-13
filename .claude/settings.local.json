@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(file:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(curl -s http://localhost:5173)",
+      "Bash(pkill -f \"vite\")",
+      "Bash(ls /mnt/c/Users/Amari/Downloads/my_porfolio/src/assets/*.pdf)",
+      "Bash(ls /mnt/c/Users/Amari/Downloads/my_porfolio/public/*.pdf)"
+    ]
+  }
+}
