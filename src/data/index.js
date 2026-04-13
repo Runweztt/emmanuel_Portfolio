@@ -178,7 +178,7 @@ export const experiences = [
   {
     id: 1,
     company: 'KINT TECH',
-    role: 'Software Engineer Intern',
+    role: 'Software Engineer',
     period: 'Mar 2025 – Feb 2026',
     location: 'Remote, UK',
     type: 'Engineering',
