@@ -9,7 +9,6 @@ import Projects from './components/sections/Projects'
 import Skills from './components/sections/Skills'
 import Experience from './components/sections/Experience'
 import Education from './components/sections/Education'
-import Websites from './components/sections/Websites'
 import Contact from './components/sections/Contact'
 
 function App() {
@@ -53,7 +52,6 @@ function App() {
           <Skills />
           <Experience />
           <Education />
-          <Websites />
           <Contact />
         </main>
         <Footer />

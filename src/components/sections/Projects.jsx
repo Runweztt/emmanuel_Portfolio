@@ -163,7 +163,7 @@ function FlagshipCard({ project, onOpen, index }) {
 
             {/* Feature list */}
             <ul className="mt-5 space-y-2">
-              {project.features.slice(0, 4).map((f, i) => (
+              {project.features.slice(0, 3).map((f, i) => (
                 <li key={i} className="flex items-start gap-2.5 text-xs text-ink-muted leading-relaxed">
                   <span className="mt-0.5 flex-shrink-0 font-bold" style={{ color: project.color }}>▸</span>
                   {f}
@@ -173,7 +173,7 @@ function FlagshipCard({ project, onOpen, index }) {
 
             {/* Stack badges */}
             <div className="mt-5 flex flex-wrap gap-1.5">
-              {project.stack.map(s => (
+              {project.stack.slice(0, 5).map(s => (
                 <span
                   key={s}
                   className="px-2.5 py-0.5 text-xs rounded-full bg-surface text-ink-faint border border-white-6 hover:border-accent-15 hover:text-ink-muted transition-colors"
@@ -304,7 +304,6 @@ export default function Projects() {
     <section id="projects" className="py-24 bg-surface">
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* Header */}
         <motion.div
           initial="hidden"
           whileInView="show"
@@ -312,15 +311,14 @@ export default function Projects() {
           variants={{ hidden: {}, show: { transition: { staggerChildren: 0.1 } } }}
           className="mb-16"
         >
-          <motion.span variants={fadeUp} className="text-xs font-semibold uppercase tracking-widest text-accent">
-            Selected Work
+          <motion.span variants={fadeUp} className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
+            Case studies
           </motion.span>
-          <motion.h2 variants={fadeUp} className="mt-3 text-3xl sm:text-4xl font-bold text-ink">
-            Shipped systems, not side projects.
+          <motion.h2 variants={fadeUp} className="mt-3 text-3xl sm:text-4xl font-bold text-ink leading-tight">
+            Built for real operators, real teams, and real growth.
           </motion.h2>
-          <motion.p variants={fadeUp} className="mt-4 text-ink-muted max-w-xl leading-relaxed">
-            LoopedAI and JargsAI are the flagships. Both are running in production, with real
-            architecture decisions, real users, and real complexity behind them.
+          <motion.p variants={fadeUp} className="mt-4 text-ink-muted max-w-2xl leading-relaxed">
+            A focused selection of products built for real users and real business needs.
           </motion.p>
         </motion.div>
 

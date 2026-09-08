@@ -1,7 +1,7 @@
 import { img1, img2, img3, img4, img6 } from '../assets/jargsai/index.js'
 import { docuReview } from '../assets/loopedai/index.js'
 import loopvaImg from '../assets/loopva.png'
-import jiboImg from '../assets/jiboltd.png'
+import canweeImg from '../assets/canwee.png'
 
 // ─── Projects ──────────────────────────────────────────────────────────────
 export const projects = [
@@ -14,7 +14,7 @@ export const projects = [
     liveUrl: 'https://www.loopedai.io',
     featured: true,
     summary:
-      'LoopedAI is a live SaaS platform that helps people navigate visa and immigration requirements. Users get AI-powered answers to immigration questions and can upload their documents for intelligent review, with a detailed compliance report showing exactly what is missing, incorrect, or ready.',
+      'LoopedAI helps users understand visa requirements and check their documents before applying.',
     problem:
       'Immigration compliance is slow, expensive, and opaque. Most people don\'t know if their documents are correct until an application is rejected.',
     solution:
@@ -41,11 +41,11 @@ export const projects = [
     title: 'JargsAI',
     tagline: 'WhatsApp-Based Agentic AI Secretary',
     type: 'Agentic AI System',
-    status: 'Production',
-    liveUrl: null,
+    status: 'Live',
+    liveUrl: 'https://www.jargsai.tech',
     featured: true,
     summary:
-      'A production-grade, WhatsApp-native AI secretary orchestrated with CrewAI multi-agent flows. You send a message. JargsAI classifies the intent, routes it to the right agent crew, executes the workflow, and replies. All inside WhatsApp.',
+      'JargsAI is a WhatsApp AI secretary that routes messages to the right workflow and completes tasks.',
     problem:
       'Most AI tools live in their own apps, which means context-switching kills productivity. People already live in WhatsApp. JargsAI brings the automation to where the conversation is happening, not the other way around.',
     solution:
@@ -82,7 +82,7 @@ export const projects = [
     liveUrl: 'https://www.loopva.co.uk',
     featured: true,
     summary:
-      'A full-stack platform connecting businesses with skilled virtual assistants. Companies post their needs, assistants apply, and the platform handles the rest from discovery through to engagement.',
+      'LoopVA connects businesses with virtual assistants through a structured service marketplace.',
     problem:
       'Finding a reliable virtual assistant is slow. Job boards are generic, agencies are expensive, and vetting takes time businesses don\'t have.',
     solution:
@@ -99,49 +99,34 @@ export const projects = [
     imageType: 'browser',
     color: '#f59e0b',
   },
-]
-
-// ─── Websites Built ────────────────────────────────────────────────────────
-export const websites = [
   {
-    id: 'loopedai-site',
-    name: 'LoopedAI',
-    url: 'https://www.loopedai.io',
-    label: 'SaaS · Immigration AI',
-    description: 'Production SaaS with multi-agent AI, 7-stage document review pipeline, and Stripe subscriptions.',
-    image: null,
-  },
-  {
-    id: 'loopva-site',
-    name: 'LoopVA',
-    url: 'https://www.loopva.co.uk',
-    label: 'Platform · Virtual Assistants',
-    description: 'Full-stack platform connecting businesses with virtual assistants.',
-    image: loopvaImg,
-  },
-  {
-    id: 'jibo-site',
-    name: 'Jibo Ltd',
-    url: 'https://www.jiboltd.com',
-    label: 'Corporate · Financial Services',
-    description: 'Corporate web presence for a financial services firm.',
-    image: jiboImg,
-  },
-  {
-    id: 'jargscormark-site',
-    name: 'Jargs Cormark',
-    url: 'https://www.jargscormark.com',
-    label: 'Corporate · Analytics',
-    description: 'Business site for a data analytics and consulting firm.',
-    image: null,
-  },
-  {
-    id: 'ptoc-site',
-    name: 'PTOC',
-    url: 'https://www.ptoc.io',
-    label: 'Platform · Professional Services',
-    description: 'Professional services platform.',
-    image: null,
+    id: 'canwee',
+    title: 'Canwee Apartments',
+    tagline: 'Customer-facing hospitality brand website',
+    type: 'Hospitality Brand Website',
+    status: 'Live',
+    liveUrl: 'https://www.canweeapartments.com',
+    featured: true,
+    summary:
+      'Canwee Apartments is a hospitality website for property discovery, guest trust, and booking inquiries.',
+    problem:
+      'Hospitality brands need a trustworthy online presence that explains the value quickly and helps customers feel confident before they book.',
+    solution:
+      'I built a clear, conversion-focused website with strong property presentation, location visibility, and a smoother guest journey across desktop and mobile.',
+    features: [
+      'Location-based property discovery for Ikeja, Gbagada, and Abeokuta',
+      'Guest-facing property presentation with clear amenity positioning',
+      'Booking and inquiry flow designed for trust and ease of use',
+      'Responsive brand website built for hospitality marketing and conversion',
+    ],
+    stack: ['React', 'Vite', 'Tailwind CSS', 'Booking UX', 'Responsive Design'],
+    stats: [
+      { value: '3', label: 'Key Locations' },
+      { value: 'Multi', label: 'Stay Options' },
+    ],
+    images: [canweeImg],
+    imageType: 'browser',
+    color: '#0ea5e9',
   },
 ]
 

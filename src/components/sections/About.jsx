@@ -34,29 +34,6 @@ function TechMarquee() {
   )
 }
 
-const capabilities = [
-  {
-    title: 'Full-Stack Engineering',
-    description:
-      'React + FastAPI + Docker, shipped with Stripe billing, async job queues, CI/CD pipelines, OAuth, and Redis caching. I own the full stack.',
-  },
-  {
-    title: 'AI Systems & Agents',
-    description:
-      'Multi-agent CrewAI pipelines, document processing with dual OCR, and WhatsApp-native AI assistants. Running in production, not just in demos.',
-  },
-  {
-    title: 'Data Analysis',
-    description:
-      'SQL, dashboards, pipeline design, BI reporting. The data background means I build software that understands what the numbers actually need to do.',
-  },
-  {
-    title: 'Systems Thinking',
-    description:
-      'Both LoopedAI and JargsAI required serious architecture: queueing, caching, failover, rate limiting, security middleware. I think in systems.',
-  },
-]
-
 export default function About() {
   return (
     <>
@@ -76,7 +53,7 @@ export default function About() {
             >
               <motion.span
                 variants={fadeUp}
-                className="text-xs font-semibold uppercase tracking-widest text-accent"
+                className="text-xs font-semibold uppercase tracking-[0.18em] text-accent"
               >
                 About
               </motion.span>
@@ -85,23 +62,18 @@ export default function About() {
                 variants={fadeUp}
                 className="mt-3 text-3xl sm:text-4xl font-bold text-ink leading-tight"
               >
-                Software engineer. AI developer. Builder.
+                I build products that work in the real world, not just on a mockup.
               </motion.h2>
 
               <motion.div variants={fadeUp} className="mt-6 space-y-4 text-ink-muted leading-relaxed">
                 <p>
-                  Emmanuel Amarikwa studies Software Engineering at African Leadership University
-                  in Kigali. He builds full-stack systems and AI-powered products,
-                  with a strong foundation in how data moves through systems and what it needs to do.
+                  I’m Emmanuel Amarikwa, a software engineer who turns business problems into working digital products.
                 </p>
                 <p>
-                  He built LoopedAI, a production SaaS with a document review pipeline,
-                  multi-agent AI crew, Celery task queues, and Stripe subscriptions. He also
-                  built JargsAI, a WhatsApp-native AI secretary running CrewAI multi-agent flows
-                  across your calendar, tasks, research, and content.
+                  I work across AI SaaS, automation, hospitality, and customer-facing platforms, from the first user flow to production deployment.
                 </p>
                 <p className="font-medium text-ink">
-                  Both are running in production. That's the level.
+                  The measure is simple: clearer experiences, better operations, and software people can depend on.
                 </p>
               </motion.div>
 
@@ -124,25 +96,25 @@ export default function About() {
               </motion.div>
             </motion.div>
 
-            {/* Right: Capabilities grid */}
+            {/* Right: concise capability summary */}
             <motion.div
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, margin: '-80px' }}
               variants={{ hidden: {}, show: { transition: { staggerChildren: 0.1, delayChildren: 0.1 } } }}
-              className="grid sm:grid-cols-2 gap-4"
+              className="space-y-4"
             >
-              {capabilities.map((cap, i) => (
-                <motion.div
-                  key={i}
-                  variants={fadeUp}
-                  whileHover={{ y: -3 }}
-                  transition={{ duration: 0.2 }}
-                  className="card-glow p-5 rounded-xl bg-card border border-white-6"
-                >
-                  <div className="w-1.5 h-1.5 rounded-full bg-accent mb-3" />
-                  <h3 className="text-sm font-semibold text-ink mb-2">{cap.title}</h3>
-                  <p className="text-xs text-ink-muted leading-relaxed">{cap.description}</p>
+              {[
+                ['Product thinking', 'Clear flows and focused scope.'],
+                ['Full-stack delivery', 'React, FastAPI, data, and deployment.'],
+                ['Applied AI', 'Automation that removes real manual work.'],
+              ].map(([title, description], i) => (
+                <motion.div key={title} variants={fadeUp} className="flex items-center gap-4 border-b border-[#eadcc9] pb-4">
+                  <span className="text-xs font-mono text-accent">0{i + 1}</span>
+                  <div>
+                    <h3 className="text-sm font-semibold text-ink">{title}</h3>
+                    <p className="text-xs text-ink-muted mt-1">{description}</p>
+                  </div>
                 </motion.div>
               ))}
             </motion.div>

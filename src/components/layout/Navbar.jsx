@@ -2,11 +2,12 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const navLinks = [
+  { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
   { label: 'Projects', href: '#projects' },
   { label: 'Skills', href: '#skills' },
   { label: 'Experience', href: '#experience' },
-  { label: 'Work', href: '#websites' },
+  { label: 'Work', href: '#projects' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -59,31 +60,29 @@ export default function Navbar() {
         transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
-            ? 'bg-canvas/90 backdrop-blur-xl border-b border-white-6 shadow-lg'
+            ? 'bg-[#f7f2ec]/80 backdrop-blur-xl border-b border-[#d9c9ba] shadow-[0_12px_50px_rgba(62,43,31,0.08)]'
             : 'bg-transparent'
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          {/* Logo */}
           <a
             href="#"
             onClick={e => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
-            className="font-bold text-lg tracking-tight text-ink hover:text-accent transition-colors duration-200"
+            className="font-black text-lg tracking-[-0.08em] text-ink hover:text-accent transition-colors duration-200"
           >
-            EA<span className="text-accent">.</span>
+            Emmanuel<span className="text-accent">.</span>
           </a>
 
-          {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-1" aria-label="Primary navigation">
+          <nav className="hidden md:flex items-center gap-1 rounded-full border border-[#dccbbb] bg-white/40 px-2 py-1.5 shadow-[0_8px_20px_rgba(72,54,41,0.04)]" aria-label="Primary navigation">
             {navLinks.map(link => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={e => { e.preventDefault(); handleNavClick(link.href) }}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
                   activeSection === link.href.slice(1)
-                    ? 'text-accent bg-accent-10'
-                    : 'text-ink-muted hover:text-ink hover:bg-white/5'
+                    ? 'text-accent bg-[#efe3d8]'
+                    : 'text-ink-muted hover:text-ink hover:bg-[#f3e7dc]'
                 }`}
               >
                 {link.label}
@@ -93,7 +92,7 @@ export default function Navbar() {
               href="/emmanuel-amarikwa-cv.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-3 px-4 py-2 rounded-lg text-sm font-semibold bg-accent text-white hover:bg-accent-dim transition-colors duration-200"
+              className="ml-2 px-4 py-2 rounded-full text-sm font-semibold bg-accent text-white hover:bg-accent-dim transition-colors duration-200 shadow-[0_10px_25px_rgba(122,79,56,0.18)]"
             >
               CV
             </a>

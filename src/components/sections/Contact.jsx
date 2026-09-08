@@ -97,11 +97,10 @@ export default function Contact() {
               Let's build something.
             </motion.h2>
             <motion.p variants={fadeUp} className="mt-5 text-ink-muted leading-relaxed max-w-md">
-              Whether you're building something ambitious and need an engineer who can own it
-              end-to-end, or you're exploring what's possible with AI and automation. I'm interested.
+              Need an engineer to take your product from idea to launch? I build full-stack products, AI tools, and automations.
             </motion.p>
             <motion.p variants={fadeUp} className="mt-3 text-ink-muted leading-relaxed max-w-md">
-              Fill in the form and it lands straight in my inbox. Or reach out directly below.
+              Send a message through the form or contact me directly.
             </motion.p>
 
             <motion.div

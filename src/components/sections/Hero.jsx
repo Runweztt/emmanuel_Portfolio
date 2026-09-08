@@ -10,12 +10,13 @@ const fadeUp = {
   show: { opacity: 1, y: 0, transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1] } },
 }
 
-// Visual card — shows what I build, not how LoopedAI works internally
+// Visual card showing what I build
 function TerminalCard() {
   const items = [
-    { label: 'Full-Stack SaaS', tag: 'LoopedAI', color: '#6366f1', icon: '⬡' },
-    { label: 'Agentic AI System', tag: 'JargsAI', color: '#22c55e', icon: '◉' },
-    { label: 'Web Platform', tag: 'LoopVA', color: '#f59e0b', icon: '◈' },
+    { label: 'AI SaaS', tag: 'LoopedAI', color: '#6366f1', icon: '⬡' },
+    { label: 'WhatsApp automation', tag: 'JargsAI', color: '#22c55e', icon: '◉' },
+    { label: 'Hospitality brand', tag: 'Canwee', color: '#0ea5e9', icon: '◈' },
+    { label: 'Architecture brand', tag: 'SunArch', color: '#b7772f', icon: '◌' },
   ]
 
   return (
@@ -23,15 +24,14 @@ function TerminalCard() {
       initial={{ opacity: 0, x: 40, scale: 0.97 }}
       animate={{ opacity: 1, x: 0, scale: 1 }}
       transition={{ duration: 0.8, delay: 0.55, ease: [0.22, 1, 0.36, 1] }}
-      className="animate-float w-full max-w-[380px] select-none"
+      className="animate-float w-full max-w-[420px] select-none"
     >
-      {/* Shipped products card */}
-      <div className="rounded-xl overflow-hidden border border-accent-20 shadow-accent bg-card">
-        <div className="flex items-center gap-2 px-4 py-3 bg-surface border-b border-accent-10">
-          <div className="w-3 h-3 rounded-full bg-red-500/70" />
-          <div className="w-3 h-3 rounded-full bg-yellow-400/70" />
-          <div className="w-3 h-3 rounded-full bg-green-500/70" />
-          <span className="ml-2 text-xs text-ink-faint font-mono">projects.json</span>
+      <div className="rounded-[28px] overflow-hidden border border-[#dccbbb] bg-[#fffdfb] shadow-[0_25px_80px_rgba(58,41,32,0.13)]">
+        <div className="flex items-center gap-2 px-4 py-3 bg-[#f7efe8] border-b border-[#e7d7c9]">
+          <div className="w-3 h-3 rounded-full bg-[#d76d5a]" />
+          <div className="w-3 h-3 rounded-full bg-[#d9b265]" />
+          <div className="w-3 h-3 rounded-full bg-[#5b9e75]" />
+          <span className="ml-2 text-[10px] uppercase tracking-[0.2em] text-ink-faint font-mono">featured work</span>
         </div>
 
         <div className="p-5 space-y-3">
@@ -41,14 +41,14 @@ function TerminalCard() {
               initial={{ opacity: 0, x: -10 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.8 + i * 0.12, duration: 0.4 }}
-              className="flex items-center gap-3 p-3 rounded-lg border border-white-6 bg-surface hover:border-accent-20 transition-colors"
+              className="flex items-center gap-3 p-3 rounded-2xl border border-[#efe1d5] bg-[#fffaf5] hover:border-accent-20 transition-colors"
             >
               <span className="text-base" style={{ color: item.color }}>{item.icon}</span>
               <div className="flex-1 min-w-0">
                 <div className="text-xs font-semibold text-ink truncate">{item.tag}</div>
                 <div className="text-xs text-ink-faint">{item.label}</div>
               </div>
-              <span className="text-xs font-medium text-success flex items-center gap-1">
+              <span className="text-[10px] font-semibold uppercase tracking-[0.14em] text-success flex items-center gap-1">
                 <span className="w-1.5 h-1.5 rounded-full bg-success" />
                 Live
               </span>
@@ -56,12 +56,11 @@ function TerminalCard() {
           ))}
         </div>
 
-        {/* Stack bar */}
         <div className="px-5 pb-5">
-          <div className="text-xs text-ink-faint mb-2">Stack</div>
+          <div className="text-[10px] uppercase tracking-[0.18em] text-ink-faint mb-2">Core stack</div>
           <div className="flex flex-wrap gap-1.5">
-            {['React', 'FastAPI', 'Docker', 'AI', 'Supabase', 'Redis'].map(t => (
-              <span key={t} className="px-2 py-0.5 text-xs rounded-full bg-accent-8 text-ink-muted border border-accent-15">
+            {['React', 'Python', 'FastAPI', 'AI', 'Supabase', 'Docker'].map(t => (
+              <span key={t} className="px-2 py-0.5 text-[10px] rounded-full bg-[#f4e9df] text-ink-muted border border-[#eadcc9]">
                 {t}
               </span>
             ))}
@@ -69,21 +68,20 @@ function TerminalCard() {
         </div>
       </div>
 
-      {/* Floating stat chips below the card */}
-      <div className="flex gap-3 mt-3 justify-end">
+      <div className="flex gap-3 mt-4 justify-end">
         {[
-          { value: '5+', label: 'Products shipped' },
-          { value: '3', label: 'Running in production' },
+          { value: '8+', label: 'Products built' },
+          { value: '5+', label: 'Live domains' },
         ].map((s, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.3 + i * 0.1 }}
-            className="px-4 py-2 rounded-lg bg-card border border-white-6 text-center"
+            className="px-4 py-2 rounded-2xl bg-[#fffaf5] border border-[#eadcc9] text-center shadow-[0_12px_20px_rgba(58,41,32,0.04)]"
           >
             <div className="text-sm font-black text-ink">{s.value}</div>
-            <div className="text-xs text-ink-faint">{s.label}</div>
+            <div className="text-[10px] uppercase tracking-[0.14em] text-ink-faint">{s.label}</div>
           </motion.div>
         ))}
       </div>
@@ -94,20 +92,21 @@ function TerminalCard() {
 export default function Hero() {
   return (
     <section
+      id="home"
       className="relative min-h-screen flex items-center overflow-hidden bg-canvas hero-grid"
       aria-label="Introduction"
+      style={{ backgroundImage: 'linear-gradient(180deg, rgba(255,255,255,0.18), rgba(255,255,255,0.02)), radial-gradient(circle at top left, rgba(122,79,56,0.08), transparent 30%)' }}
     >
-      {/* Ambient glow — left */}
+      {/* Ambient glow */}
       <div
         aria-hidden="true"
         className="absolute -top-32 -left-64 w-[700px] h-[700px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(99,102,241,0.10) 0%, transparent 65%)' }}
+        style={{ background: 'radial-gradient(circle, rgba(122,79,56,0.14) 0%, transparent 65%)' }}
       />
-      {/* Ambient glow — right */}
       <div
         aria-hidden="true"
         className="absolute -bottom-32 -right-32 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(99,102,241,0.07) 0%, transparent 65%)' }}
+        style={{ background: 'radial-gradient(circle, rgba(122,79,56,0.09) 0%, transparent 65%)' }}
       />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 pt-28 pb-20 w-full">
@@ -120,30 +119,19 @@ export default function Hero() {
             animate="show"
             className="max-w-2xl"
           >
-            {/* Availability */}
-            <motion.div variants={fadeUp} className="inline-flex items-center gap-2 mb-8">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute h-full w-full rounded-full bg-success opacity-70" />
-                <span className="relative h-2 w-2 rounded-full bg-success" />
-              </span>
-              <span className="text-xs font-semibold uppercase tracking-widest text-ink-muted">
-                Available for opportunities
-              </span>
-            </motion.div>
-
-            {/* Name */}
             <motion.h1
               variants={fadeUp}
-              className="text-5xl sm:text-6xl lg:text-[72px] font-black tracking-tight leading-[1.0]"
+              className="text-5xl sm:text-6xl lg:text-[72px] font-black tracking-[-0.06em] leading-[0.95]"
             >
-              <span className="text-ink">Emmanuel</span>
+              <span className="text-ink">I build</span>
               <br />
-              <span className="text-gradient">Amarikwa</span>
+              <span className="text-gradient">systems</span>
+              <br />
+              <span className="text-ink text-4xl sm:text-5xl lg:text-[56px]">that make businesses work better.</span>
             </motion.h1>
 
-            {/* Role line */}
             <motion.div variants={fadeUp} className="mt-5 flex flex-wrap items-center gap-2">
-              {['Software Engineer', 'AI Developer', 'Builder'].map((role, i) => (
+              {['Full-stack products', 'AI workflows', 'Hospitality systems', 'Business platforms'].map((role, i) => (
                 <span key={i} className="flex items-center gap-2 text-base font-semibold text-ink-muted">
                   {i > 0 && <span className="text-ink-faint text-xs">·</span>}
                   {role}
@@ -151,19 +139,15 @@ export default function Hero() {
               ))}
             </motion.div>
 
-            {/* Description — specific, not fluffy */}
             <motion.p
               variants={fadeUp}
-              className="mt-6 text-base sm:text-lg leading-relaxed text-ink-muted max-w-lg"
+              className="mt-6 text-base sm:text-lg leading-relaxed text-ink-muted max-w-xl"
             >
-              I build full-stack systems, AI-powered tools, and data-driven applications.
-              My work runs from the database schema to production deployment: React, FastAPI,
-              Python, Docker, Supabase, multi-agent AI pipelines.
+              I build digital products for real businesses. My work includes AI tools, customer platforms, and systems that simplify operations.
             </motion.p>
 
-            {/* Location */}
             <motion.p variants={fadeUp} className="mt-2 text-sm text-ink-faint">
-              Based in Kigali, Rwanda · Software Engineering at African Leadership University
+              Based in Kigali, Rwanda. I build for hospitality, SaaS, automation, and growing brands.
             </motion.p>
 
             {/* CTAs */}
