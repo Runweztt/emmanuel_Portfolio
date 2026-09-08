@@ -315,10 +315,10 @@ export default function Projects() {
             Case studies
           </motion.span>
           <motion.h2 variants={fadeUp} className="mt-3 text-3xl sm:text-4xl font-bold text-ink leading-tight">
-            Built for real operators, real teams, and real growth.
+            Selected systems and the business problems they solve.
           </motion.h2>
           <motion.p variants={fadeUp} className="mt-4 text-ink-muted max-w-2xl leading-relaxed">
-            A focused selection of products built for real users and real business needs.
+            Each project starts with a workflow, not a technology list.
           </motion.p>
         </motion.div>
 

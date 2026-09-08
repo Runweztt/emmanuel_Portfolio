@@ -23,7 +23,7 @@ export default function Education() {
             Education
           </motion.span>
           <motion.h2 variants={fadeUp} className="mt-3 text-3xl sm:text-4xl font-bold text-ink">
-            Academic background.
+            Education and training.
           </motion.h2>
         </motion.div>
 

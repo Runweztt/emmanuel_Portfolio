@@ -127,7 +127,7 @@ export default function Hero() {
               <br />
               <span className="text-gradient">systems</span>
               <br />
-              <span className="text-ink text-4xl sm:text-5xl lg:text-[56px]">that make businesses work better.</span>
+              <span className="text-ink text-4xl sm:text-5xl lg:text-[56px]">that remove business friction.</span>
             </motion.h1>
 
             <motion.div variants={fadeUp} className="mt-5 flex flex-wrap items-center gap-2">
@@ -143,7 +143,7 @@ export default function Hero() {
               variants={fadeUp}
               className="mt-6 text-base sm:text-lg leading-relaxed text-ink-muted max-w-xl"
             >
-              I build AI assistants, booking systems, and business software. My products help companies answer customers, manage bookings, and run daily work.
+              I turn manual work into software. I build AI assistants, booking systems, and SaaS products that help teams respond faster and run with less friction.
             </motion.p>
 
             <motion.p variants={fadeUp} className="mt-2 text-sm text-ink-faint">

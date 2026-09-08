@@ -94,7 +94,7 @@ export default function Contact() {
               Contact
             </motion.span>
             <motion.h2 variants={fadeUp} className="mt-3 text-3xl sm:text-4xl font-bold text-ink">
-              Let's build something.
+              Have a product to build?
             </motion.h2>
             <motion.p variants={fadeUp} className="mt-5 text-ink-muted leading-relaxed max-w-md">
               Need an engineer to take your product from idea to launch? I build SaaS products, AI assistants, booking systems, and automations.

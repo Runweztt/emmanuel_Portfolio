@@ -29,7 +29,7 @@ export default function Experience() {
             Experience
           </motion.span>
           <motion.h2 variants={fadeUp} className="mt-3 text-3xl sm:text-4xl font-bold text-ink">
-            Where the work happened.
+            Engineering experience.
           </motion.h2>
         </motion.div>
 

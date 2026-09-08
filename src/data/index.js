@@ -14,7 +14,7 @@ export const projects = [
     liveUrl: 'https://www.loopedai.io',
     featured: true,
     summary:
-      'LoopedAI helps users understand visa requirements and check their documents before applying.',
+      'LoopedAI puts visa guidance and document checks in one workflow, so applicants can find issues before submission.',
     problem:
       'Immigration compliance is slow, expensive, and opaque. Most people don\'t know if their documents are correct until an application is rejected.',
     solution:
@@ -45,9 +45,9 @@ export const projects = [
     liveUrl: 'https://www.jargsai.tech',
     featured: true,
     summary:
-      'JargsAI is a WhatsApp AI secretary that routes messages to the right workflow and completes tasks.',
+      'JargsAI turns WhatsApp messages into completed tasks, from calendar updates to research and reminders.',
     problem:
-      'Most AI tools live in their own apps, which means context-switching kills productivity. People already live in WhatsApp. JargsAI brings the automation to where the conversation is happening, not the other way around.',
+      'Most assistants require users to open another app. JargsAI puts calendar, research, and task automation inside WhatsApp, where the conversation already happens.',
     solution:
       'An agentic system built on CrewAI and modular OpenClaw skill handlers. Each incoming message gets classified, routed, and handled by a specific agent crew. High-stakes actions (deleting events, sending content) are gated behind explicit confirmation. Multi-step memory persists across the conversation.',
     features: [
@@ -82,7 +82,7 @@ export const projects = [
     liveUrl: 'https://www.loopva.co.uk',
     featured: true,
     summary:
-      'LoopVA connects businesses with virtual assistants through a structured service marketplace.',
+      'LoopVA gives businesses one place to find, compare, and engage virtual assistants.',
     problem:
       'Finding a reliable virtual assistant is slow. Job boards are generic, agencies are expensive, and vetting takes time businesses don\'t have.',
     solution:
@@ -108,7 +108,7 @@ export const projects = [
     liveUrl: 'https://www.canweeapartments.com',
     featured: true,
     summary:
-      'Canwee Apartments is a hospitality website for property discovery, guest trust, and booking inquiries.',
+      'Canwee Apartments helps guests find the right property, understand the offer, and start a booking.',
     problem:
       'Hospitality brands need a trustworthy online presence that explains the value quickly and helps customers feel confident before they book.',
     solution:

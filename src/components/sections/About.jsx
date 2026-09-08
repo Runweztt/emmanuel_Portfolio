@@ -62,18 +62,18 @@ export default function About() {
                 variants={fadeUp}
                 className="mt-3 text-3xl sm:text-4xl font-bold text-ink leading-tight"
               >
-                I build products that work in the real world, not just on a mockup.
+                I turn business problems into working software.
               </motion.h2>
 
               <motion.div variants={fadeUp} className="mt-6 space-y-4 text-ink-muted leading-relaxed">
                 <p>
-                  I’m Emmanuel Amarikwa, a software engineer who turns business problems into working digital products.
+                  I’m Emmanuel Amarikwa, a software engineer focused on business systems.
                 </p>
                 <p>
-                  I build AI assistants, SaaS products, booking systems, and business websites from the first user flow to production.
+                  I start with the workflow. Then I design, build, and deploy the software that makes it faster, clearer, or easier to manage.
                 </p>
                 <p className="font-medium text-ink">
-                  The measure is simple: clearer experiences, better operations, and software people can depend on.
+                  The goal is practical: less manual work, better service, and stronger operations.
                 </p>
               </motion.div>
 
@@ -105,9 +105,9 @@ export default function About() {
               className="space-y-4"
             >
               {[
-                ['Product thinking', 'Clear flows and focused scope.'],
-                ['Full-stack delivery', 'React, FastAPI, data, and deployment.'],
-                ['Applied AI', 'Automation that removes real manual work.'],
+                ['Find the friction', 'Identify the slow or repetitive part of the workflow.'],
+                ['Design the system', 'Turn the process into a clear product and user flow.'],
+                ['Ship the result', 'Build, deploy, and improve the software in production.'],
               ].map(([title, description], i) => (
                 <motion.div key={title} variants={fadeUp} className="flex items-center gap-4 border-b border-[#eadcc9] pb-4">
                   <span className="text-xs font-mono text-accent">0{i + 1}</span>

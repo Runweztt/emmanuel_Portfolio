@@ -32,10 +32,10 @@ export default function Skills() {
             Technical Skills
           </motion.span>
           <motion.h2 variants={fadeUp} className="mt-3 text-3xl sm:text-4xl font-bold text-ink">
-            The stack behind the work.
+            Tools I use to build the system.
           </motion.h2>
           <motion.p variants={fadeUp} className="mt-4 text-ink-muted max-w-xl leading-relaxed">
-            These are what I have shipped production systems with.
+            Chosen for speed, reliability, and maintainability.
           </motion.p>
         </motion.div>
 
