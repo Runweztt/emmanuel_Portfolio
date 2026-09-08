@@ -70,7 +70,7 @@ export default function About() {
                   I’m Emmanuel Amarikwa, a software engineer who turns business problems into working digital products.
                 </p>
                 <p>
-                  I work across AI SaaS, automation, hospitality, and customer-facing platforms, from the first user flow to production deployment.
+                  I build AI assistants, SaaS products, booking systems, and business websites from the first user flow to production.
                 </p>
                 <p className="font-medium text-ink">
                   The measure is simple: clearer experiences, better operations, and software people can depend on.

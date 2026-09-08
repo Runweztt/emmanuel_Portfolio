@@ -131,7 +131,7 @@ export default function Hero() {
             </motion.h1>
 
             <motion.div variants={fadeUp} className="mt-5 flex flex-wrap items-center gap-2">
-              {['Full-stack products', 'AI workflows', 'Hospitality systems', 'Business platforms'].map((role, i) => (
+              {['AI assistants', 'SaaS products', 'Booking systems', 'Business software'].map((role, i) => (
                 <span key={i} className="flex items-center gap-2 text-base font-semibold text-ink-muted">
                   {i > 0 && <span className="text-ink-faint text-xs">·</span>}
                   {role}
@@ -143,7 +143,7 @@ export default function Hero() {
               variants={fadeUp}
               className="mt-6 text-base sm:text-lg leading-relaxed text-ink-muted max-w-xl"
             >
-              I build digital products for real businesses. My work includes AI tools, customer platforms, and systems that simplify operations.
+              I build AI assistants, booking systems, and business software. My products help companies answer customers, manage bookings, and run daily work.
             </motion.p>
 
             <motion.p variants={fadeUp} className="mt-2 text-sm text-ink-faint">
